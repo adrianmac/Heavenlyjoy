@@ -140,8 +140,10 @@ if ($('#mainNav').length) {
 
             if ( header_scroll > 450 ) {
                 $("#mainNav").addClass("fixed_header");
+                $("#logopic").css("display", "none");
             }else {
                 $("#mainNav").removeClass("fixed_header");
+                $("#logopic").css("display", "inline");
             }
 
         }else{
