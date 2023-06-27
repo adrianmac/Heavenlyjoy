@@ -2587,7 +2587,6 @@ footer .footer_social_box a:hover i {
     padding: 20px;
 }
 .testimonial_page_box_cover::after {
-    border-left: 2px dashed #49c5b6;
     content: "";
     display: block;
     height: 86%;
