@@ -1237,7 +1237,8 @@ p {
 /*--------------------------------------------------*/
 .p-our_booth_text p {
     color: #000;
-    text-align: center;
+    text-align: left;
+    font-size: 160%;
 }
 
 .p-our_services_text p {
