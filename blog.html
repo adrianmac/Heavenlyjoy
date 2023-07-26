@@ -34,20 +34,20 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
 </head>
-
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/64b47544cc26a871b028c7cb/1h5gek5bi';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
+  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+  (function () {
+    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/64b47544cc26a871b028c7cb/1h5gek5bi';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
+  })();
 </script>
 <!--End of Tawk.to Script-->
+
 <body>
   <div class="p-wrapper">
     <header class="main_header_outer">
@@ -120,46 +120,20 @@ s0.parentNode.insertBefore(s1,s0);
     </section>
     <section>
       <div class="p-page_inner">
-        <div class="p-section_head">
+        <!-- <div class="p-section_head">
           <h2>Blog</h2>
-        </div>
-        <div class="container p-content_section p-blog">
+        </div> -->
+        <div class="container p-content_section">
           <div class="row clearfix">
-            <div class="col-md-8 col-lg-8 p-blog_listing">
-              <div class="p-blogpage_list_single clearfix">
-                <div class="p-blog_list_img">
-                  <img alt="blog 1 photo" src="assets/images/blog_01.jpg" class="img-fluid" alt="Blog post 1 picture">
-                </div>
-                <div class="p-blog_list_detail">
-                  <h4><a href="blog_single.html">post heading 01</a></h4>
-                  <span><i class="fa fa-clock-o"></i> july 7 , 2019</span>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque leo porttitor
-                    blandit. Donec molestie malesuada bibendum. Vivamus facilisis molestie est vitae volutpat. Aliquam
-                    non nisl venenatis, egestas mauris a, varius ante. Ut quam quambibendum a enim rhoncus, dictum
-                    mattis justo.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-lg-4 p-sidebar">
-              <div class="p-side_single">
-                <h5>recent post</h5>
-                <div class="p-side_posts">
-                  <div class="p-side_single_post">
-                    <img src="assets/images/post_thumb_01.jpg" class="img-fluid" alt="thumbnail for blog one">
-                    <div class="p-side_blog_text">
-                      <a href="#">post heading 01</a>
-                      <span><i class="fa fa-clock-o"></i> july 7 , 2019</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="col-md-12">
+              <iframe id="my-iframe" style="min-width: 100%;" frameborder="0"
+                src="https://heavenlyjoy5.wordpress.com"></iframe>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <footer class="footer_box_outer">
       <div class="footer_box_cover">
         <div class="container">
@@ -246,7 +220,26 @@ s0.parentNode.insertBefore(s1,s0);
 
   <script src="assets/js/custom.js"> </script>
 
+  <script>
+    // Adjust the height of the iframe dynamically based on its content
+    function resizeIframe() {
+      var iframe = document.getElementById('my-iframe');
+      var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+      var iframeHeight = innerDoc.documentElement.scrollHeight;
+      iframe.style.height = iframeHeight + 'px';
+    }
 
+    // Call the resize function when the iframe content loads and whenever the window is resized
+    $(document).ready(function () {
+      setInterval(() => {
+        resizeIframe();
+      }, 2000)
+    });
+
+    $(window).resize(function () {
+      resizeIframe();
+    });
+  </script>
 </body>
 
 </html>
