@@ -120,20 +120,83 @@
     </section>
     <section>
       <div class="p-page_inner">
-        <!-- <div class="p-section_head">
-          <h2>Blog</h2>
-        </div> -->
-        <div class="container p-content_section">
+        <div class="p-section_head">
+          <h2>Blog Listing</h2>
+        </div>
+        <div class="container p-content_section p-blog">
           <div class="row clearfix">
-            <div class="col-md-12">
-              <iframe id="my-iframe" style="min-width: 100%;" frameborder="0"
-                src="https://heavenlyjoy5.wordpress.com"></iframe>
+            <div class="col-md-8 col-lg-8 p-blog_listing">
+              <div class="p-blogpage_list_single clearfix">
+                <div class="p-blog_list_img">
+                  <img src="./assets/images/blog_img_01.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="p-blog_list_detail">
+                  <h4><a href="blog_single.html">post heading 01</a></h4>
+                  <span><i class="fa fa-clock-o"></i> july 7 , 2019</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius scelerisque leo porttitor
+                    blandit. Donec molestie malesuada bibendum. Vivamus facilisis molestie est vitae volutpat. Aliquam
+                    non nisl venenatis, egestas mauris a, varius ante. Ut quam quambibendum a enim rhoncus, dictum
+                    mattis justo.
+                  </p>
+                  <div class="p-blog_list_foot">
+                    <span><i class="fa fa-comment"></i> 10 comments</span>
+                    <span><i class="fa fa-eye"></i> 192</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-4 p-sidebar">
+              <div class="p-side_single">
+                <h5>Categories</h5>
+                <div class="p-side_links">
+                  <ul>
+                    <li><a href="#">Categorie 01</a><span>(11)</span></li>
+                    <li><a href="#">Categorie 02</a><span>(09)</span></li>
+                    <li><a href="#">Categorie 03</a><span>(27)</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="p-side_single">
+                <h5>text widget</h5>
+                <div class="p-side_text">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the
+                  </p>
+                </div>
+              </div>
+              <div class="p-side_single">
+                <h5>recent post</h5>
+                <div class="p-side_posts">
+                  <div class="p-side_single_post">
+                    <img src="assets/images/post_thumb_01.jpg" class="img-fluid" alt="">
+                    <div class="p-side_blog_text">
+                      <a href="#">post heading 01</a>
+                      <span><i class="fa fa-clock-o"></i> july 7 , 2019</span>
+                    </div>
+                  </div>
+                  <div class="p-side_single_post">
+                    <img src="assets/images/post_thumb_02.jpg" class="img-fluid" alt="">
+                    <div class="p-side_blog_text">
+                      <a href="#">post heading 02</a>
+                      <span><i class="fa fa-clock-o"></i> july 7 , 2019</span>
+                    </div>
+                  </div>
+                  <div class="p-side_single_post">
+                    <img src="assets/images/post_thumb_03.jpg" class="img-fluid" alt="">
+                    <div class="p-side_blog_text">
+                      <a href="#">post heading 03</a>
+                      <span><i class="fa fa-clock-o"></i> july 7 , 2019</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
     <footer class="footer_box_outer">
       <div class="footer_box_cover">
         <div class="container">
@@ -224,9 +287,10 @@
     // Adjust the height of the iframe dynamically based on its content
     function resizeIframe() {
       var iframe = document.getElementById('my-iframe');
-      var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-      var iframeHeight = innerDoc.documentElement.scrollHeight;
-      iframe.style.height = iframeHeight + 'px';
+      // console.log(iframe.)
+      // var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+      // var iframeHeight = innerDoc.documentElement.scrollHeight;
+      // iframe.style.height = iframeHeight + 'px';
     }
 
     // Call the resize function when the iframe content loads and whenever the window is resized
