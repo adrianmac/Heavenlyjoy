@@ -1447,7 +1447,7 @@ p {
 
 .p-our_services_text p {
     color: #000;
-    text-align: center;
+    text-align: left;
     font-size: 150%;
 }
 
@@ -2210,6 +2210,26 @@ ul li {
     letter-spacing: 1.1px;
     text-transform: uppercase;
 }
+
+.footer_box li,
+.footer_box a { 
+    color: #3f3a3a;
+    font-size: 13px;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+
+.footer_box .submenu_box .submenu_box_inner
+{
+ color: #fff;
+ z-index: 5;
+}
+
+.footer_box .submenu_box .submenu_box_inner li a
+{
+ color: #fff;
+}
+
 
 .footer_box li {
     margin-bottom: 8px;
