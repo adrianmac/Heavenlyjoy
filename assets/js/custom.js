@@ -167,6 +167,10 @@ $("#NowickiWedding").html(nowicki_wedding);
 $("#StFrancisGrad").html(st_francis_photos);
 $("#SetonHall").html(seton_hall);
 $("#AlaFormal").html(ala_formal);
+$("#360Photo").html(videoBooth);
+$("#digitalBooth").html(digitalBooth);
+$("#glamBooth").html(glamBooth);
+$("#mirrorBooth").html(mirrorBooth);
 
 
 // gallery light box close system
